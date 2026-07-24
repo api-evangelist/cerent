@@ -1,8 +1,29 @@
 aid: cerent
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cerent.png
 name: Cerent
-description: 'Cerent is a company surfaced as a portfolio company of kleiner-perkins and added to the
-  API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Cerent Corporation was a Petaluma, California optical-networking startup, founded in the
+  mid-1990s and backed by Kleiner Perkins, that built the Cerent 454 — a compact
+  next-generation SONET multiservice provisioning platform that collapsed traditional
+  add-drop multiplexing into a far smaller, cheaper, data-aware box for carrier metro
+  networks. Cisco Systems acquired Cerent in 1999 for approximately $6.9 billion in stock,
+  at the time the largest acquisition in Cisco's history, and the product line shipped on as
+  the Cisco ONS 15454, one of Cisco's most successful optical transport platforms. Cerent has
+  not operated as an independent company since. Its hardware-era business predated public web
+  APIs entirely, and it maintains no developer platform, documentation, SDKs, or API surface
+  today — the cerent.com domain is now held by Cisco and serves only an acquisition notice.
+  This profile is retained as a venture-portfolio historical record, not an active API provider.
 url: https://raw.githubusercontent.com/api-evangelist/cerent/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +31,43 @@ x-backed-by:
 - kleiner-perkins
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: cisco-systems
+x-acquired-year: 1999
+x-successor-product: Cisco ONS 15454
+x-active: false
+x-api-provider: false
+x-status-checked: '2026-07-20'
+x-status-evidence: >-
+  Probed 2026-07-20: cerent.com is delegated to Cisco nameservers (ns1/ns2/ns3.cisco.com) and
+  publishes no A, MX, or TXT record; www.cerent.com is a CNAME to redirect.cisco.com and
+  returns HTTP 302 to http://www.cisco.com/msgs/aquisition.html (Cisco's acquisition-notice
+  page). HTTPS on www.cerent.com fails certificate validation — the host is redirect-only.
+x-enrichment-note: >-
+  No API, developer portal, documentation, OpenAPI, packages, or event surface exists to
+  search, derive, or generate from. No provider artifacts were created and no artifact or
+  link pointers were wired (no fabrication). Session WebSearch budget was exhausted, so this
+  pass rests on direct DNS and HTTP probes, which were decisive.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Enterprise
+- Networking
+- Optical Networking
+- SONET
+- Telecommunications
+- Networking Hardware
+- Acquired
+- Cisco
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
