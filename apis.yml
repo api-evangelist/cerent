@@ -48,7 +48,7 @@ x-enrichment-note: >-
   search, derive, or generate from. No provider artifacts were created and no artifact or
   link pointers were wired (no fabrication). Session WebSearch budget was exhausted, so this
   pass rests on direct DNS and HTTP probes, which were decisive.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
